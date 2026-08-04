@@ -1,0 +1,23 @@
+{
+  "name": "Azad Abdul Hameed Balushi",
+  "short_name": "Azad Balushi",
+  "description": "Digital Transformation & Enterprise Communications Professional",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#12809B",
+  "icons": [
+    {
+      "src": "/AB_Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/AB_Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
