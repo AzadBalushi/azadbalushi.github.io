@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://azadbalushi.pages.dev
+Sitemap: https://azadbalushi.pages.dev/sitemap.xml
