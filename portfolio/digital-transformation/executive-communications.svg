@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="588" viewBox="0 0 940 588" fill="none">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="940" y2="588" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#004F6B"/>
+      <stop offset="0.5" stop-color="#12809B"/>
+      <stop offset="1" stop-color="#34ACC8"/>
+    </linearGradient>
+    <pattern id="grid4" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="white" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="940" height="588" fill="url(#g4)"/>
+  <rect width="940" height="588" fill="url(#grid4)"/>
+  <g opacity="0.95">
+    <rect x="80" y="140" width="780" height="50" rx="8" fill="white" fill-opacity="0.12"/>
+    <rect x="80" y="210" width="780" height="50" rx="8" fill="white" fill-opacity="0.16"/>
+    <rect x="80" y="280" width="780" height="50" rx="8" fill="white" fill-opacity="0.12"/>
+    <rect x="80" y="350" width="500" height="50" rx="8" fill="white" fill-opacity="0.16"/>
+  </g>
+  <text x="470" y="560" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white" fill-opacity="0.85">Executive Communications Platform</text>
+</svg>
