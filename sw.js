@@ -9,7 +9,7 @@
 //   - Network-first with cache fallback: navigations
 // ============================================================================
 
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.1.0';
 const STATIC_CACHE = `static-${VERSION}`;
 const PAGE_CACHE = `pages-${VERSION}`;
 const IMAGE_CACHE = `images-${VERSION}`;
@@ -23,8 +23,28 @@ const PRECACHE_URLS = [
   '/icons/maskable-192x192.png',
   '/icons/maskable-512x512.png',
   '/icons/apple-touch-icon.png',
+  '/icons/favicon-32x32.png',
   '/AB_Logo.png',
   '/azad-portrait.png',
+  '/',
+  '/portfolio',
+  // iOS splash screens
+  '/splash/splash-iphone-15-promax.png',
+  '/splash/splash-iphone-15-pro.png',
+  '/splash/splash-iphone-15.png',
+  '/splash/splash-iphone-13-mini.png',
+  '/splash/splash-iphone-11-promax.png',
+  '/splash/splash-iphone-11-pro.png',
+  '/splash/splash-iphone-11.png',
+  '/splash/splash-iphone-8-plus.png',
+  '/splash/splash-iphone-8.png',
+  '/splash/splash-iphone-se.png',
+  '/splash/splash-ipad-pro-12-9.png',
+  '/splash/splash-ipad-pro-11.png',
+  '/splash/splash-ipad-pro-10-5.png',
+  '/splash/splash-ipad-10.png',
+  '/splash/splash-ipad-mini-6.png',
+  '/splash/splash-ipad-air-mini.png',
 ];
 
 // ---------------------------------------------------------------------------
@@ -34,7 +54,19 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
       .open(STATIC_CACHE)
-      .then((cache) => cache.addAll(PRECACHE_URLS))
+      .then((cache) =>
+        // addAll is all-or-nothing; use individual puts so one failure
+        // doesn't break the entire precache (important for iOS reliability)
+        Promise.all(
+          PRECACHE_URLS.map((url) =>
+            cache
+              .add(new Request(url, { cache: 'reload' }))
+              .catch((err) =>
+                console.warn('[sw] precache failed:', url, err.message)
+              )
+          )
+        )
+      )
       .then(() => self.skipWaiting())
   );
 });
@@ -126,6 +158,21 @@ async function networkFirst(request, cacheName) {
   } catch (err) {
     const cached = await cache.match(request);
     if (cached) return cached;
+    // iOS Safari sometimes requests the same navigation with a different URL
+    // (trailing slash, fragment). Try a broad match on the pathname.
+    const url = new URL(request.url);
+    const keys = await cache.keys();
+    for (const key of keys) {
+      try {
+        const keyUrl = new URL(key.url);
+        if (keyUrl.pathname === url.pathname) {
+          const match = await cache.match(key);
+          if (match) return match;
+        }
+      } catch {
+        // skip invalid keys
+      }
+    }
     // Genuine network failure — show offline page
     const offline = await caches.match(OFFLINE_URL);
     return offline || Response.error();
