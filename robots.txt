@@ -1,5 +1,8 @@
 User-Agent: *
 Allow: /
 
+User-Agent: *
+Disallow: /portfolio
+
 Host: https://azadbalushi.pages.dev
 Sitemap: https://azadbalushi.pages.dev/sitemap.xml
