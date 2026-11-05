@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://azadbalushi.pages.dev</loc>
-<lastmod>2026-10-18T03:22:51.271Z</lastmod>
+<loc>https://azadbalushi.github.io</loc>
+<lastmod>2026-11-05T07:57:52.331Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
+</url>
+<url>
+<loc>https://azadbalushi.github.io/business-card</loc>
+<lastmod>2026-11-05T07:57:52.331Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 </urlset>

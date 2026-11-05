@@ -1,0 +1,14 @@
+/portfolio
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+
+/portfolio.html
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+
+/portfolio/*
+  X-Robots-Tag: noindex, noimageindex, noarchive
+
+/portfolio-generated/*
+  X-Robots-Tag: noindex, noimageindex, noarchive
+
+/sw.js
+  Cache-Control: no-cache
