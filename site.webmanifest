@@ -1,0 +1,33 @@
+{
+  "name": "Azad Balushi — Digital Workplace Transformation",
+  "short_name": "Azad Balushi",
+  "description": "Digital transformation, workplace strategy and meaningful impact.",
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4fafb",
+  "theme_color": "#12809B",
+  "categories": ["business", "productivity", "portfolio"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

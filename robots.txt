@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /portfolio/
+Disallow: /portfolio-generated/
+
+Host: https://azadbalushi.github.io
+Sitemap: https://azadbalushi.github.io/sitemap.xml
