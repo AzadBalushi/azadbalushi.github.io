@@ -1,4 +1,4 @@
-# Azad Balushi — Portfolio Website
+# Azad Balushi — Portfolio Website.
 
 > Digital Workplace Transformation specialist showcasing digital workplace transformation, creative design, and enterprise solutions.
 
