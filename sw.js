@@ -10,7 +10,7 @@
  * the static export directory (out/) if present.
  */
 
-const CACHE_VERSION = "ZJTPt-m4SZuLL_WjMBx2e";
+const CACHE_VERSION = "mx1uPzbNNWzgZyH7sY23u";
 const STATIC_CACHE = `azadbalushi-static-${CACHE_VERSION}`;
 const PAGE_CACHE = `azadbalushi-pages-${CACHE_VERSION}`;
 const IMAGE_CACHE = `azadbalushi-images-${CACHE_VERSION}`;

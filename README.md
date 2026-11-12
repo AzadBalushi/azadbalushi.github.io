@@ -1,4 +1,4 @@
-# Azad Balushi — Portfolio Website.
+# Azad Balushi — Portfolio Website
 
 > Digital Workplace Transformation specialist showcasing digital workplace transformation, creative design, and enterprise solutions.
 
@@ -58,15 +58,31 @@ The portfolio is a curated collection of professional work presented across 9 ca
 ## Technology Stack
 
 - Adobe CC
-- Azure
-- Copilot
+- Adobe Illustrator
+- Adobe Photoshop
+- Amazon Web Services
+- Blender 3D
+- CSS 3
+- Digital Photography
 - Figma
+- Generative AI
+- GitHub
+- HTML 5
+- JavaScript
+- Joomla
 - Microsoft 365
+- Microsoft Azure
+- Microsoft Copilot
 - Microsoft Power BI
+- Next JS
+- PHP
 - Power Platform
 - React
 - SharePoint
 - Teams
+- TypeScript
+- UI/UX Design
+- WordPress
 
 ---
 
